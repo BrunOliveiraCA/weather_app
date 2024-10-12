@@ -59,8 +59,7 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             try {
                 val response = weatherApiService.getWeather(
-                    cityName = "Calgary",
-                    apiKey = "338bbb2534975fe61e4723f0d0eeda55"
+                    cityName = "Edmonton"
                 )
 
                 binding.cityNameTextView.text = response.name
